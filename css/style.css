@@ -1,24 +1,9 @@
 *{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Varela Round', sans-serif;
-}
-
-.center{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 2%;
-}
-
-html,body{
-    height: 100%;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    font-family: 'Monserrat', sans-serif;
 }
 
 header{
@@ -26,42 +11,70 @@ header{
     padding: 20px 0;
 }
 
-.logo{
-    width: 50%;
+.container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.logo_home img{
+    position: absolute; /* Posição fixa dentro do header */
+    margin-top: 1%;  /* Alinhado ao topo */
+    left: 0; /* Alinhado à esquerda */
+    margin: 10px; 
+}
 
+.perfil{
+    position: absolute; /* Posição fixa dentro do header */
+    margin-top: 2%;  /* Alinhado ao topo */
+    right: 0; /* Alinhado à direita */
+    margin: 10px; 
+}
 
-.menu{
+.header-search{
+    position: absolute;
+    margin-top: 3%;
+    left: 50%;
+    transform: translateX(-60%);
+
+}
+
+.body_header{
+    display: flex;
+    flex-direction: row;
+    background-color: #1FB857;
+    justify-content: space-around;
+    
+}
+
+.imagens{
+    display: flex;
+    flex-direction: row;
+}
+
+.caderneta{
+    display: flex;
+    flex-direction: row;  
+    left: 0; /* Alinhado à esquerda */
+    margin: 10px;
+}
+
+.cidadao{
+    display: flex;
+    flex-direction: row;
+    right: 0; /* Alinhado à direita*/
+    margin: 10px; 
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-around;
+}
+
+.indices{
     padding-top: 30px;
     width: 50%;
-    text-align: right;
-}
-
-.menu a{
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    margin-right: 15px;
-}
-
-section.sobre{
-    height: calc(100% - 200px);
-    position: relative;
-}
-
-.extras{
-    position: absolute;
-    bottom: -500px;
-    right: -500px;
-    width: 1000px;
-    height: 1000px;
-    border-radius: 50%;
-    background-color: #F49DEA;
-}
-
-.texto{
-    padding-top: 20px;
-    width: 40%;
     text-align: right;
 }
